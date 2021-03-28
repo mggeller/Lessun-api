@@ -1,12 +1,10 @@
 package com.nagel.project.lessun.controller;
 
 import com.nagel.project.lessun.entity.Course;
-import com.nagel.project.lessun.repository.ICourseRepository;
 import com.nagel.project.lessun.service.CourseService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin

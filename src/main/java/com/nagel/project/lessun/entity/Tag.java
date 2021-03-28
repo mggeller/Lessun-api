@@ -12,18 +12,11 @@ import javax.persistence.Id;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class Course {
+public class Tag {
 
     @Id
     @GeneratedValue
-    private Long id;
-    private String tag;
-    private String title;
-    private Integer duration;
-    private Integer students;
-    private String short_description;
-    private String long_description;
-    private Long price;
-    private Integer rating;
-    private String picture_path;
+    private Long Id;
+    private String name;
+    private String Description;
 }
