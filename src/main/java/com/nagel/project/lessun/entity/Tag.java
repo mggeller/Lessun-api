@@ -4,19 +4,20 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
-@Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Embeddable
+@Table(name = "tags")
 public class Tag {
 
-    @Id
+    /*@Id
     @GeneratedValue
-    private Long Id;
-    private String name;
+    private Long id;*/
+
+    @Column(name = "tag_name")
+    private String tagName;
     private String Description;
 }
