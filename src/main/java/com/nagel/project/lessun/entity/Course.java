@@ -37,11 +37,19 @@ public class Course {
     @Column(name = "picture_path")
     private String picturePath;
 
-    @ElementCollection(fetch = FetchType.EAGER)
+    @ElementCollection
     @CollectionTable(
             name = "tags",
             joinColumns = @JoinColumn(name = "course_id",
             referencedColumnName = "id")
     )
     private List<Tag> tags = new ArrayList<>();
+
+    @ElementCollection
+    @CollectionTable(
+            name = "reviews",
+            joinColumns = @JoinColumn(name = "course_id",
+            referencedColumnName = "id")
+    )
+    private List<Review> reviews = new ArrayList<>();
 }

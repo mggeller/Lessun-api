@@ -7,3 +7,7 @@ Insert into tags (tag_name, description, course_id) values ('Music', 'Some Not l
 Insert into tags (tag_name, description, course_id) values ('Music', 'Some Not long not short description about tag', 2);
 Insert into tags (tag_name, description, course_id) values ('Math', 'Some Not long not short description about tag', 3);
 Insert into tags (tag_name, description, course_id) values ('Language', 'Some Not long not short description about tag', 4);
+
+Insert into reviews (user_name, feed_back, course_id) values ('Anonymous User', 'This is a wonderful starting course. You will find everything in this course to get you properly starting out on guitar. I highly recommend this course for anyone who has yet to take lessons.', 2);
+Insert into reviews (user_name, feed_back, course_id) values ('Anonymous User', 'You are very familiar with music.You explain the subject very well.Thank you teacher.', 2);
+Insert into reviews (user_name, feed_back, course_id) values ('Anonymous User', 'Amazing course. Don''t think about that u ar in the right place ;)', 2);
