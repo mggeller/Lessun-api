@@ -52,4 +52,8 @@ public class Course {
             referencedColumnName = "id")
     )
     private List<Review> reviews = new ArrayList<>();
+
+    public void addReview(Review review) {
+        this.reviews.add(review);
+    }
 }
