@@ -2,6 +2,7 @@ package com.nagel.project.lessun.controller;
 
 import com.nagel.project.lessun.dto.CourseDTO;
 import com.nagel.project.lessun.dto.ReviewDTO;
+import com.nagel.project.lessun.dto.SearchField;
 import com.nagel.project.lessun.entity.Course;
 import com.nagel.project.lessun.entity.Review;
 import com.nagel.project.lessun.service.CourseService;
@@ -23,6 +24,8 @@ public class CourseController {
 
     private final CourseService courseService;
 
+    private SearchField searchField;
+
     @GetMapping
     public List<CourseDTO> getCourses() {
         return courseService.getCourses();
@@ -34,6 +37,11 @@ public class CourseController {
     }
 
     @PostMapping
+    public void searchByTitle(@RequestBody SearchField searchField) {
+        courseService.searchByTitle(searchField);
+    }
+
+    @PostMapping("/Create")
     public CourseDTO addCourse(@RequestBody CourseDTO courseDTO) {
         return courseService.addCourse(courseDTO);
     }
